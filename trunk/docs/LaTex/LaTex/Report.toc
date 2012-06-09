@@ -1,0 +1,149 @@
+\contentsline {section}{\numberline {1}Project Description}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}Introduction}{2}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Project Problem}{2}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Project Goals}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Final Project Scope}{3}{subsection.1.4}
+\contentsline {section}{\numberline {2}Project Dynamics}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Team Member Strengths}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Job Roles}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Software Model}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Project Tools}{5}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Communication Aids}{5}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Project Management}{5}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Documentation}{5}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Implementation}{6}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}Version Management}{6}{subsubsection.2.4.5}
+\contentsline {subsection}{\numberline {2.5}Meetings}{6}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Client/Supervisor Meeting}{6}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Team Meetings}{6}{subsubsection.2.5.2}
+\contentsline {subsection}{\numberline {2.6}Work Techniques}{7}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Logbooks}{7}{subsubsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Peer Review}{7}{subsubsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.3}Pair Programming}{7}{subsubsection.2.6.3}
+\contentsline {subsection}{\numberline {2.7}Project Management}{7}{subsection.2.7}
+\contentsline {subsubsection}{\numberline {2.7.1}Project and Task Management}{8}{subsubsection.2.7.1}
+\contentsline {subsubsection}{\numberline {2.7.2}Organisation}{8}{subsubsection.2.7.2}
+\contentsline {subsection}{\numberline {2.8}Programming Styles}{8}{subsection.2.8}
+\contentsline {subsubsection}{\numberline {2.8.1}Modularity}{8}{subsubsection.2.8.1}
+\contentsline {subsubsection}{\numberline {2.8.2}Simplicity}{9}{subsubsection.2.8.2}
+\contentsline {subsubsection}{\numberline {2.8.3}Scalability}{9}{subsubsection.2.8.3}
+\contentsline {subsubsection}{\numberline {2.8.4}Extensibility}{9}{subsubsection.2.8.4}
+\contentsline {subsubsection}{\numberline {2.8.5}Documented}{9}{subsubsection.2.8.5}
+\contentsline {subsection}{\numberline {2.9}Testing Styles}{9}{subsection.2.9}
+\contentsline {subsubsection}{\numberline {2.9.1}Unit Testing}{9}{subsubsection.2.9.1}
+\contentsline {subsubsection}{\numberline {2.9.2}Integration Testing}{9}{subsubsection.2.9.2}
+\contentsline {subsubsection}{\numberline {2.9.3}System Testing}{9}{subsubsection.2.9.3}
+\contentsline {subsection}{\numberline {2.10}Evaluation Techniques}{10}{subsection.2.10}
+\contentsline {subsubsection}{\numberline {2.10.1}Manual Inspection}{10}{subsubsection.2.10.1}
+\contentsline {subsubsection}{\numberline {2.10.2}Module Testing}{10}{subsubsection.2.10.2}
+\contentsline {subsubsection}{\numberline {2.10.3}Manual and Module Comparison}{10}{subsubsection.2.10.3}
+\contentsline {subsubsection}{\numberline {2.10.4}Manual Face Comparison \& Inspection}{10}{subsubsection.2.10.4}
+\contentsline {subsubsection}{\numberline {2.10.5}Summary Trailer Evaluation}{10}{subsubsection.2.10.5}
+\contentsline {section}{\numberline {3}Project Analysis}{11}{section.3}
+\contentsline {subsection}{\numberline {3.1}Stakeholder Analysis}{11}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Requirements Analysis}{11}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Assumptions}{11}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Functional Requirements}{12}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Non-Functional Requirements}{12}{subsubsection.3.2.3}
+\contentsline {subsection}{\numberline {3.3}Risk Analysis}{13}{subsection.3.3}
+\contentsline {section}{\numberline {4}Background Research}{15}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{15}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Algorithms}{15}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Video Summarisation Algorithms}{15}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Facial Recognition Algorithms}{16}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Audio Analysis Algorithms}{17}{subsubsection.4.2.3}
+\contentsline {subsection}{\numberline {4.3}Techniques for producing Audiovisual Summaries}{17}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Existing Video Summarisation Solutions}{18}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Conclusion}{19}{subsection.4.5}
+\contentsline {section}{\numberline {5}Design}{20}{section.5}
+\contentsline {subsection}{\numberline {5.1}Design Overview}{20}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Text based Analysis}{20}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Audio Analysis}{20}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Facial Detection Analysis}{21}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Video Shot Segmentation}{21}{subsubsection.5.1.4}
+\contentsline {subsubsection}{\numberline {5.1.5}Video Analysis}{21}{subsubsection.5.1.5}
+\contentsline {subsubsection}{\numberline {5.1.6}Textual Summary}{21}{subsubsection.5.1.6}
+\contentsline {subsubsection}{\numberline {5.1.7}Video Summary}{21}{subsubsection.5.1.7}
+\contentsline {subsection}{\numberline {5.2}Design Patterns}{22}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Evaluation of Patterns}{22}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Proposed Solution}{23}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Architecture Structure Diagram}{23}{subsubsection.5.2.3}
+\contentsline {subsection}{\numberline {5.3}User Interface Design}{24}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Prototype}{25}{subsection.5.4}
+\contentsline {section}{\numberline {6}Implementation}{26}{section.6}
+\contentsline {subsection}{\numberline {6.1}Libraries Used}{26}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Online Television Database Integration}{28}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}TVDBSearcher}{28}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}SeriesSearch}{28}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}User Walkthrough}{29}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Subtitles}{30}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Subtitle}{31}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}SubtitleParser}{31}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}RunSubtitleParser}{31}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}NameScore}{31}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}NameScoreComparator}{32}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.6}NameFinder}{32}{subsubsection.6.3.6}
+\contentsline {subsubsection}{\numberline {6.3.7}PersonNameFinder}{32}{subsubsection.6.3.7}
+\contentsline {subsubsection}{\numberline {6.3.8}LocationNameFinder}{33}{subsubsection.6.3.8}
+\contentsline {subsubsection}{\numberline {6.3.9}RunNameFinder}{33}{subsubsection.6.3.9}
+\contentsline {subsubsection}{\numberline {6.3.10}User Walkthrough}{34}{subsubsection.6.3.10}
+\contentsline {subsection}{\numberline {6.4}Audio Processing}{35}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}FrequencyObject}{36}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}FrequencyObjectComparator}{36}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}VolumeDetector}{36}{subsubsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.4}FrequencyDetector}{36}{subsubsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.5}Music Identifier}{37}{subsubsection.6.4.5}
+\contentsline {subsection}{\numberline {6.5}Facial Recognition}{38}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Face Detection Techniques}{38}{subsubsection.6.5.1}
+\contentsline {subsubsection}{\numberline {6.5.2}Class Diagram}{47}{subsubsection.6.5.2}
+\contentsline {subsubsection}{\numberline {6.5.3}Process Diagram}{48}{subsubsection.6.5.3}
+\contentsline {subsubsection}{\numberline {6.5.4}Video Character}{48}{subsubsection.6.5.4}
+\contentsline {subsubsection}{\numberline {6.5.5}CharacterFinder}{49}{subsubsection.6.5.5}
+\contentsline {subsubsection}{\numberline {6.5.6}CharacterDetectedObserver}{49}{subsubsection.6.5.6}
+\contentsline {subsubsection}{\numberline {6.5.7}User Walkthrough}{50}{subsubsection.6.5.7}
+\contentsline {subsection}{\numberline {6.6}Video Segmentation}{51}{subsection.6.6}
+\contentsline {subsubsection}{\numberline {6.6.1}Introduction}{51}{subsubsection.6.6.1}
+\contentsline {subsubsection}{\numberline {6.6.2}Software Implementation}{51}{subsubsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.3}User Walkthrough}{53}{subsubsection.6.6.3}
+\contentsline {subsection}{\numberline {6.7}Summarisation}{54}{subsection.6.7}
+\contentsline {subsubsection}{\numberline {6.7.1}Summary}{54}{subsubsection.6.7.1}
+\contentsline {subsubsection}{\numberline {6.7.2}GenerateSummary}{54}{subsubsection.6.7.2}
+\contentsline {subsubsection}{\numberline {6.7.3}ExportSummary}{58}{subsubsection.6.7.3}
+\contentsline {subsubsection}{\numberline {6.7.4}User Walkthrough}{58}{subsubsection.6.7.4}
+\contentsline {subsection}{\numberline {6.8}User Interface}{58}{subsection.6.8}
+\contentsline {section}{\numberline {7}Code \& UI Testing}{66}{section.7}
+\contentsline {subsection}{\numberline {7.1}Unit Testing}{66}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}System Testing}{70}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}User's goals}{76}{subsection.7.3}
+\contentsline {section}{\numberline {8}Evaluation}{78}{section.8}
+\contentsline {subsection}{\numberline {8.1}Evaluation of the Final Product}{78}{subsection.8.1}
+\contentsline {subsubsection}{\numberline {8.1.1}Evaluation of Person and Location Name Detection in Subtitles}{78}{subsubsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.2}Face Recognition}{86}{subsubsection.8.1.2}
+\contentsline {subsubsection}{\numberline {8.1.3}Evaluating Video Shot Detection.}{86}{subsubsection.8.1.3}
+\contentsline {subsubsection}{\numberline {8.1.4}Video Summary Evaluation}{87}{subsubsection.8.1.4}
+\contentsline {subsubsection}{\numberline {8.1.5}Non-Functional Evaluation}{89}{subsubsection.8.1.5}
+\contentsline {subsection}{\numberline {8.2}Evaluation of the Team Dynamics}{89}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Evaluation of the Project Management}{90}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Time management}{90}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}Resource management}{91}{subsubsection.8.3.2}
+\contentsline {section}{\numberline {9}Conclusions}{92}{section.9}
+\contentsline {section}{\numberline {10}Future Work}{94}{section.10}
+\contentsline {section}{References}{95}{section.10}
+\contentsline {section}{Appendices}{96}{section.10}
+\contentsline {section}{\numberline {A}Agreed Project Specification}{96}{section.A}
+\contentsline {section}{\numberline {B}Early Gantt Charts}{97}{section.B}
+\contentsline {subsection}{\numberline {B.1}Initial Gantt Chart}{97}{subsection.B.1}
+\contentsline {section}{\numberline {C}Use Case Diagrams}{98}{section.C}
+\contentsline {section}{\numberline {D}TV Testing Data}{100}{section.D}
+\contentsline {subsection}{\numberline {D.1}Top Gear Bolivia}{101}{subsection.D.1}
+\contentsline {subsection}{\numberline {D.2}Top Gear America}{104}{subsection.D.2}
+\contentsline {subsection}{\numberline {D.3}Dr. Who, Episode 12}{107}{subsection.D.3}
+\contentsline {subsection}{\numberline {D.4}Dr. Who, Episode 13}{110}{subsection.D.4}
+\contentsline {subsection}{\numberline {D.5}The Impressions Show with Culshaw and Stephenson, Episode 1}{111}{subsection.D.5}
+\contentsline {subsection}{\numberline {D.6}The Impressions Show, Episode 2}{116}{subsection.D.6}
+\contentsline {subsection}{\numberline {D.7}Yellowstone, Autumn}{120}{subsection.D.7}
+\contentsline {section}{\numberline {E}Testing Images}{125}{section.E}
+\contentsline {subsection}{\numberline {E.1}Unit Tests}{125}{subsection.E.1}
+\contentsline {subsection}{\numberline {E.2}Integration Tests}{125}{subsection.E.2}
+\contentsline {subsection}{\numberline {E.3}System Tests}{125}{subsection.E.3}
+\contentsline {subsection}{\numberline {E.4}User's Goal Tests}{125}{subsection.E.4}

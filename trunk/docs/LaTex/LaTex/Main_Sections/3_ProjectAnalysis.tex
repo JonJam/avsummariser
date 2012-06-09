@@ -1,0 +1,118 @@
+\section{Project Analysis}
+
+\newcounter{FuncReqCounter}
+\newcounter{NonFuncReqCounter}
+
+\subsection{Stakeholder Analysis}
+
+Stakeholders can be put into two categories which are primary and secondary where:
+\begin{itemize}
+\item{Primary stakeholders are the people and groups who are directly affected by the outcome of the project.}
+\item{Secondary stakeholders are people and groups who aren’t directly affected by the outcome of the project, but still have an interest in it.}
+\end{itemize}
+
+Using these definitions, the stakeholders for this project are as follows:
+
+Primary:
+	\begin{itemize}
+	\item{The customer (Southampton IT Innovation Centre).}
+	\item{The development team.}
+	\end{itemize}
+Secondary:
+	\begin{itemize}
+	\item{The project’s supervisor.}
+	\item{The BBC.}
+	\item{The School of Electronic and Computer Science}
+	\item{The University of Southampton.}
+	\end{itemize}
+
+\subsection{Requirements Analysis}
+\label{sec:Requirements}
+
+\subsubsection{Assumptions}
+The assumptions made by the team whilst constructing the requirements of this project are as follows:
+
+\begin{itemize}
+\item{Input video files will be the ``finished" broadcast material e.g no out-takes and clapper boards}
+\item{Input subtitle files will be in W3C Time Text Markup language format.}
+\item{The subtitle file associated for each TV programme is accurate enough that further speech-to-text analysis from the audio stream of a video is not required.}
+\item{The trailer containing plot spoilers for a TV programme is not a priority for the customer based upon the Archive Monetisation scenario (see Section \ref{sec:ProjectProblem}).}
+\end{itemize}
+\newpage
+	\subsubsection{Functional Requirements}
+The function requirements which the team have agreed upon with the customer are below. They are split into the sections: must have and could have. Use case diagrams of these requirements are in Appendix \ref{sec:UseCaseDiagrams}.
+
+	\underline{Must Have}
+		\begin{list}{     MF\arabic{FuncReqCounter}:   ~}{\usecounter{FuncReqCounter}}
+			\item{Ability to import video file(s).}
+			\item{Ability to import subtitle file(s).}
+			\item{Ability to breakdown video into video shots.}
+			\item{Ability to breakdown audio into samples.}
+			\item{Ability to detect when people appear in video.}
+			\item{Ability to detect when people are mentioned in subtitles/audio.}
+			\item{Ability to detect when locations are mentioned in subtitles/audio.}
+			\item{Ability to detect loud sections in audio.}
+			\item{Ability to detect music segments in audio.}
+			\item{Ability to identify main characters using MF5 \& MF6.}
+			\item{Ability to identify main locations using MF7.}
+			\item{Ability to identify music segments using MF9.}
+			\item{Ability to identify key shots for trailer based upon MF5 - MF9 and MF14.}
+			\item{Ability to adjust summary based on:}
+			\begin{itemize}
+					\item{TV Genre}
+					\item{Duration}
+					\item{Trailer type}
+			\end{itemize}
+			\item{Ability to produce a summary (trailer, data, etc) using MF10 - MF14.}
+			\item{Ability to export summary produced.}
+			\item{Ability to view and control everything in system via a GUI.}
+	\end{list}
+
+	\underline{Could Have}
+		\begin{list}{     CF\arabic{FuncReqCounter}:   ~}{\usecounter{FuncReqCounter}}
+			\item{Ability to determine locations from video.}
+			\item{Ability to perform speech to text analysis when a subtitle data file isn't available.}
+		\end{list}
+\newpage
+	\subsubsection{Non-Functional Requirements}
+		\begin{list}{     NF\arabic{NonFuncReqCounter}:~}{\usecounter{NonFuncReqCounter}}
+			\item{Accept formats used by the BBC archive.}
+			\item{Export summary data in a standard formats (e.g. video in mp4, data in XML).}
+			\item{Time to process all input and build summary must be significantly less than the time taken to watch it.}
+			\item{Application must provide feedback (e.g. progress of processing) to the user.}
+			\item{Application must be multi threaded.}
+			\item{Build on OpenIMAJ software.}
+		\end{list}
+
+\subsection{Risk Analysis}
+\label{sec:Risks}
+Below are the risks that have been identified by the group which may affect the project. In order to counter these possible risks, strategies have been devised. The columns Likelihood and Impact use a scale from 1 - 5 where 1 is the least and 5 is the maximum \cite{riskRef}.
+
+\begin{longtable}{|p{90pt} |p{45pt}|p{35pt}|p{35pt}|p{200pt}|}
+	\hline
+	Risk & Likelihood & Impact & Overall Risk & Plan
+	\\ \hline
+	Project size / goals have been underestimated. & 3 & 5 & 15 & If progress reflects this, discuss with the customer and supervisor to identify requirements which aren’t key and may be removed in order that the project can meet the scheduled deadlines.
+	\\ \hline
+	Loss of a team member due to illness or other circumstances. & 3 & 4 & 12 & Throughout the project the team will work in pairs (pair programming) so that at least two people are managing a task. When a member is ``lost", the other team member can continue work and if necessary, more members can be allocated to a task if the team sees fit. Also, report the situation to Supervisor.
+	\\ \hline
+	Designs aren’t as required and need to be reworked. & 3 & 3 & 9 & An iterative waterfall development process has been chosen to allow changes during the project. As a team review the designs and change them as necessary to meet the project's needs.
+	\\ \hline
+	Project schedule slips. & 4 & 2 & 8 & Contingency time has been built into the project plan to allow for slippages in progress yet ensure deadlines are met. The focus of team members can be rearranged to help with ongoing delayed tasks.
+	\\ \hline
+Unable to find appropriate libraries to complete a requirement. & 2 & 4 & 8 & View current progress and discuss with the customer and supervisor. If there is enough time left in the project and the requirement is necessary, perform research and to the best of the team's abilities construct a solution to complete the task.
+	\\ \hline
+	Requirements change. & 1 & 5 & 5 & An iterative waterfall development process has been chosen to allow changes during the project. Review changes in the requirements with the Customer and Supervisor. Where possible and if time permitting the team may rework the current work to match these changes.
+	\\ \hline
+	Unable to meet with Supervisor or Customer. & 5 & 1 & 5 & An email will be sent detailing the current progress of the project and also, to arrange a meeting with the Supervisor or Customer when they are next available.
+	\\ \hline
+	Loss / damage to team’s computers. & 4 & 1 & 4 & Throughout the project work will be backed up in two places.
+	\begin{itemize}
+	\item{Documents on Google Docs}
+	\item{Code on UGForge}
+	\end{itemize}
+	Therefore, any loss/damage to the team’s computers is insignificant as work
+	can continue using backed up work using alternative computer equipment. \\ \hline
+	Tools fail to perform as expected. & 2 & 1 & 2 & Seek out alternative tools which meet requirements.
+	\\ \hline
+\end{longtable}

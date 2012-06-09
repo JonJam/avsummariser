@@ -1,0 +1,3 @@
+Don't forget to set up an Environment variable in run configurations:
+Name: LD_LIBRARY_PATH
+and the value should be the location of the Xuggler lib folder

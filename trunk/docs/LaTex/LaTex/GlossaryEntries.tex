@@ -1,0 +1,53 @@
+
+% Glossary entries for use within the document.
+% http://en.wikibooks.org/wiki/LaTeX/Glossary
+% Glossary entries must be referenced before they are used.
+
+% See Justification.tex for example usage.
+
+% The acronyms listed are not put down as references. An acronym can contain text
+% From a glossary entry, but the latex/makeglossaries pair in Makefile need to be run TWICE
+% Acronyms can be used the same as a glossary entry via \gls{acronym-key}
+\newacronym{IDEacr}{IDE}{Integrated Development Environment}
+
+% Glossary entries are put into the glossary as long as they are cited using \gls{key} \Gls{key} or \GLS{key} (the variations just affect the capitolisation of the name printed at the point of reference.)
+\newglossaryentry{IDE}{name=Integrated Development Environment,
+description={A piece of software which}}
+
+\newacronym{LaTexacr}{LaTex}{}
+
+\newglossaryentry{LaTex}{name = , 
+description ={A form of document production designed for techinical
+publications. The format allows for the simpler production of papers which
+contain mathmatical forumla and varying layouts and referencing formats,
+using a more programming like approach.}}
+
+\newacronym{BBCacr}{BBC}{British Broadcasting Corperation}
+
+\newglossaryentry{BBC}{name = The British Broadcasting Corperation,
+description = {A tax payer paid for television and radio based broadcasting
+house. The BBC aims to provide entertainment and knowledge to the British
+isles, our remaining empire and the rest of the world through the world
+service. The BBC is known worldwide for its impartial news stories and has a
+reputation as a trustworthy, quality news source.}}
+
+\newacronym{IAMacr}{IAM}{The Intelligence, Agents, Multimedia Group}
+
+\newglossaryentry{IAM}{name = The Intelligence, Agents, Multimedia Group,
+description ={A group of researchers baased at Southampton University. These
+researchers look into behavious of agents, intelligence and multimedia in
+various novel and interesting applications throughout the spectrum of
+technology and science. They are multidisciplinary and interdisciplinary based
+allowing for world class research to be conducted into the creation and
+application of such systems.}}
+
+\newacronym{OpenIMAJacr}{OpenIMAJ}{Open Intelligent Multimedia Analysis in Java
+toolkit}
+
+\newglossaryentry{OpenIMAJ}{name = Open Intelligent Multimedia Analysis in Java
+toolkit, description ={A software library written in Java with the goal of
+assisting the analysis of audiovisual data. OpenIMAJ contains a number of
+useful methods for most multimedia processing needs. It was created by IAM at
+Southampton university during 2011 and recently presented to the wider
+computer science community during a conference in November 2011.}}
+

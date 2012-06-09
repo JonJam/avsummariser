@@ -1,0 +1,179 @@
+\newpage
+\section{Testing Appendix}
+\label{sec:TestingAppendix}
+
+\subsection{Unit Tests}
+\label{sec:UnitTestAppendix}
+This section details the rest of the unit tests.
+
+\begin{center}
+\begin{longtable}{| p{18pt} | p{90pt}| p{78pt}| p{75pt} | p{62pt} | p{35pt} |}
+\hline
+Test & Test location & Test description & Expected result & Actual result & Success\\\hline
+11 & model.threads. \newline LocationName \newline FinderThread & In the method run there
+is a while loop which should only iterate when the name finder process is currently
+operating & Should iterate through the while loop for whole time that the name
+finder process is active & Iterates whilst the aforementioned process is active
+& Y\\ \hline
+12 & model.tvdb. \newline SeriesSearch & In the method chosenSeries the for loop should iterate the same number of times 
+as there are genres for a series of TV chosen & If there are five genres the for loop should iterate five times & Iterates five times & Y\\ \hline
+13 & model.threads. \newline PersonName \newline FinderThread & In the method run there is a while check used to see whether a process is use, when in use this
+while loop should be entered & Process is in use so enter while loop & while loop is entered & Y\\ \hline 
+14 & model.time. \newline TimeUtils & In the method getTimeInString there is a for loop which should iterate twice & It should iterate 
+twice & Iterates twice & Y\\ \hline
+15 & model.viedotools. \newline GetSubsetAdapter & In the method start there is a for loop used to find the number of video streams in 
+a file, the for loop should iterate the same number of times as there are valid video streams & Eight video streams should cause the for loop
+to iterate eight times & Iterates eight times & Y\\ \hline
+16 & view. \newline PersonNames \newline MentionedDetail \newline Panel & In the method update there is an if check to see whether the UI should be
+updated & If the scrollPane does not equal null then it should be removed and the UI updated & ScrollPane is removed and the UI is updated & Y\\ \hline
+17 & view.videobrowser. \newline VideoBrowser & In the method VideoBrowser there is a check to ensure that only accepted
+file formats are displayed in the file chooser & Should only display .mp4 files & Displays .mp4 only & Y \\ \hline
+18 & model.videotools. \newline VideoFileHelper & In the method concatFiles
+there is an if check to see if any videos are present & If there are no videos
+then the if region should be entered & When no files were entered the if region
+was entered & Y\\ \hline
+19 & view. \newline SeriesSearchPanel & In the method seriesSearchPanel there is
+an if check to see whether the user has pressed the enter key & When the entere
+key is pressed the if region should be entered & Upon pressing enter the if
+region is entere & Y\\ \hline
+20 & view.plot. \newline ScatterPlotWindow & In the method addSeries there is a
+check to see whether a series is present & If a series is present then the if
+region should be entered & When there are no series present the if region is not
+entered & Y\\\hline
+21 & model.music. \newline MusicIdentifier & In the method
+identifyMusic does the if check only enter the area when all the variables are
+null \& All variable equal null & Should enter the if section & If section
+entered & Y\\ \hline
+22 & model.music. \newline MusicIdentifier & In the method
+identifyMusic we test to see whether the try and catch section work correctly
+when an exception occurs & When an exception occurs a stack trace should appear
+& Stack trace appears once an exception is detected & Y\\ \hline
+\end{longtable}
+\end{center}
+
+\subsection{System Tests}
+\label{sec:SystemTestAppendix}
+
+\begin{center}
+\begin{longtable}{| p{18pt} | p{100pt}| p{100pt}| p{110pt} | p{46pt} |}
+\hline
+Test &Test														&Input				&Expected Outcome					&Actual Outcome
+\\\hline
+11 	&Load Video (Single file)										&MP4 video file			&Loaded Successfully						&Y	
+\\\hline
+12	&Load Video (Any other file type)									&AVI video file			&Cannot be loaded into system				&Y			
+\\\hline
+13	&Load Video (Unable to move focus to underlying GUI)					&					&Unable to move focus					&Y				
+\\\hline					
+14	&Load Subtitles (Valid subtitle file)								&Valid DVB subtitle file	&Loaded Successfully						&Y			
+\\\hline
+15	&Load Subtitles (Other XML file)									&Non DVB XML file		&UnSuccessfully loaded and output message		&Y			
+\\\hline	
+16	&Load Subtitles (Any other file type)								&TXT file				&Cannot be loaded into system				&Y				
+\\\hline
+17	&Load Subtitles (Unable to move focus to underlying GUI)				&					&Unable to move focus.					&Y			
+\\\hline
+18	&Load Subtitles (Can't select multiple files)							&Multiple DVB subtitle files	&Can only select on file.					&Y			
+\\\hline	
+19	&TVDB Search (Performed when press return)							&"Doctor Who"			&Searched performed.						&Y		
+\\\hline	
+20	&TVDB Search (Performed when click Search)							&"Doctor Who"			&Searched performed.						&Y	
+\\\hline	
+21	&TVDB Search (No matching programme name)						&"azazazaza"			&Searched performed and exits as no results produced. Displaying message in GUI.	&Y	
+\\\hline	
+22	&TVDB Search (Results displayed and unable to move focus to underlying GUI)	&"Doctor Who"			&Search performed and results display. Unable to move focus to underlying window.	&Y
+\\\hline	
+23	&TVDB Search (Results displayed and chose Cancel)					&"Doctor Who"			&Searched performed and cancelled succesfully. Displaying message in GUI.	&Y 
+\\\hline	
+24	&TVDB Search (Results displayed and chose Ok)						&"Doctor Who"			&Searched performed and completes Successfully. Displaying message in GUI.	&Y
+\\\hline	
+25	&TVDB Search (Complete and then do search again)						&"Two and a Half Men"		&Searched performed and completes Successfully overwriting previous data. Displaying message in GUI.	&Y	
+\\\hline
+26	&Select video (Another already selected)								&Video file with subtitles	&Update display to show video selected and deselect other. Processing for selected video begins. Subtitle processing displayed in output tabs.	&Y	
+\\\hline	
+27	&Select video (When a video is playing)								&Two video files			&Update display to show video selected and deselect other. Processing for selected video begins. And video continues playing.	&Y
+\\\hline						
+28	&Play video (Non already playing)									&Video file				&Video begins playing in Player Tab from beginning.&Y			
+\\\hline	
+29	&Play video (Another video is already playing)							&Two video files			&Video begins playing in Player Tab from beginning.&Y				
+\\\hline					
+30	&Pause video												&Video file				&Video pauses correctly.					&Y				
+\\\hline	
+31	&Pause video (Paused previously)									&Video file				&Video resumes playing.					&Y				
+\\\hline						
+32	&Seek in video (Whilst video not playing)							&Video file.			&Nothing happens.						&Y			
+\\\hline	
+33	&Seek in video (Slider updates whilst video playing)						&Video file.			&Slider position updates as video plays			&Y			
+\\\hline	
+34	&Seek in video (Whilst video playing)								&Video file.			&Video jumps to position in video.			&Y			
+\\\hline						
+35	&Remove video (Whilst video is processing)							&Video file				&Video is removed from system. Processing which is running completes and doesn't cause issues.	&Y
+\\\hline	
+36	&Remove video (Whilst video is processing)							&Video file with Subtitles	&Video is removed from system. Processing which is running completes and doesn't cause issues.	&Y
+\\\hline						
+37	&View graph of video data.	&Video file with Subtitles.					&Graph is displayed showing all data produced for that video.				&Y				
+\\\hline						
+38	&Output tabs update correctly (Whilst viewing)						&Video file with subtitles	&Output Tabs updated Successfully whilst viewing.	&Y				
+\\\hline	
+39	&Generate summary (No videos loaded)								&					&Unable to select Generate Summary			&Y				
+\\\hline	
+40	&Generate summary (Using Default Trailer Type)						&Video file with Subtitles. Top Gear series selected		&Summary generated Successfully.	&Y		
+\\\hline	
+41	&Generate summary (Using Loudness Trailer Type)						&Video file with Subtitles. Top Gear series selected		&Summary generated Successfully.	&Y		
+\\\hline	
+42	&Generate summary (Using People Mentioned Trailer Type)				&Video file with Subtitles. Top Gear series selected		&Summary generated Successfully.	&Y		
+\\\hline	
+43	&Generate summary (Using People Mentioned Trailer Type)				&Video file without Subtitles. Top Gear series selected	&Summary generated Successfully.	&Y		
+\\\hline	
+44	&Generate summary (Using Location Mentioned Trailer Type)				&Video file with Subtitles. Top Gear series selected		&Summary generated Successfully.	&Y		
+\\\hline	
+45	&Generate summary (Using Location Mentioned Trailer Type)				&Video file without Subtitles. Top Gear series selected	&Summary generated Successfully	.	&Y			
+\\\hline						
+46	&Generate summary (One video without Subtitles, no TVDB information)		&Video file without Subtitles. No TVDB information loaded. &Summary generated Successfully.	&Y	
+\\\hline	
+47	&Generate summary (One video without Subtitles, TVDB information)		&Video file without Subtitles. Top Gear series selected	&Summary generated Successfully.	&Y
+\\\hline	
+48	&Generate summary (One video with subtitles, no TVDB information)			&Video file with Subtitles. No TVDB information.		&Summary generated Successfully.	&Y
+\\\hline	
+49	&Generate summary (One video with subtitles, TVDB information)			&Video file with Subtitles. Top Gear series selected		&Summary generated Successfully.	&Y	
+\\\hline						
+50	&Generate summary (Multiple videos with mix of Subtitles files and none, no TVDB information)	&Two Video files. One with subtitle and one without. No TVDB information loaded.	&Summary generated Successfully.	&Y	
+\\\hline
+51	&Generate summary (After previously selected a video)					&Video file with subtitle file. TVDB information loaded.	&Summary generated Successfully.	&Y
+\\\hline	
+52	&Generate summary (Select video whilst processing)					&Video file with subtitle file. TVDB information loaded.	&Summary generated Successfully.	&Y	
+\\\hline	
+53	&Generate summary (Add video whilst processing)						&Two Video file with subtitle files. TVDB information loaded. 	&Summary generated Successfully.&Y	
+\\\hline	
+54	&Generate summary (Remove video whilst processing)					&Two Video file with subtitle files. TVDB information loaded. 	&Summary generated Successfully.&Y	
+\\\hline	
+55	&Generate summary (Change genre whilst processing)					&One Video file with subtitle file. TVDB information loaded. 	&Summary generated Successfully.&Y	
+\\\hline	
+56	&Generate summary (Change duration while processing)					&One Video file with subtitle file. TVDB information loaded. 	&Summary generated Successfully.&Y
+\\\hline	
+57	&Generate summary (Change trailer type whilst processing)				&One Video file with subtitle file. TVDB information loaded. 	&Summary generated Successfully.&Y	
+\\\hline	
+58	&Generate summary (Change series whilst processing)					&One Video file with subtitle file. TVDB information loaded. 	&Summary generated Successfully.&Y
+\\\hline	
+59	&Generate summary (Generate summary again after completion)			&One Video file with subtitle file. TVDB information loaded. 	&Summary generated Successfully.&Y
+\\\hline					
+60	&Play summary (No summary produced)								&											&Play Summary button not available.&Y		
+\\\hline
+61	&Play summary (Whilst generating summary)							&One Video file with subtitle file. TVDB information loaded. 	&Play Summary button not available.&Y	
+\\\hline
+62	&Export summary (No summary produced)							&											&Export Summary button not available.	&Y		
+\\\hline
+63	&Export summary (Whilst generating summary)						&											&Export Summary button not available.	&Y		
+\\\hline		
+64	&Export summary (One video without Subtitles, TVDB information)			&Video file without Subtitles. Top Gear series selected		&Export summary Successfully.	&Y	
+\\\hline
+65	&Export summary (One video with subtitles, no TVDB information)			&Video file with Subtitles. No TVDB information.			&Export summary Successfully.	&Y
+\\\hline
+66	&Export summary (One video with subtitles, TVDB information)			&Video file with Subtitles. Top Gear series selected			&Export summary Successfully.	&Y
+\\\hline					
+67	&Export summary (Multiple videos with mix of Subtitles files and none, no TVDB information) &Two Video files. One with subtitle and one without. No TVDB information loaded.	&Export summary Successfully.		&Y	
+\\\hline
+68	&Export summary (Multiple videos with mix of Subtitles files and none, TVDB information)	&Two Video files. One with subtitle and one without. TVDB information loaded.	&Export summary Successfully.		&Y
+\\\hline
+\end{longtable}
+\end{center}

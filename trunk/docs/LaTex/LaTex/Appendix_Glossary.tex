@@ -1,0 +1,13 @@
+
+% Add entries into GlossaryEntries.tex and reference them using \gls{glossary-key}
+
+% Changes from \section{<title>} to \subsection{<title>}
+\setglossarysection{subsection}
+
+% The subsection header is printed my printglossary
+% \subsection{Glossary}
+\printglossary[numberedsection]
+
+% The subsection header is printed my printglossary
+% \subsubsection{Acronyms}
+\printglossary[numberedsection, type=acronym]

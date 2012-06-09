@@ -1,0 +1,158 @@
+\newpage
+\section{Code \& UI Testing}
+
+In accordance with our previously decided testing strategy (see Section
+\ref{TestingStyles}) these following sections detail those tests the team have
+performed upon the project as it has been developed and once it was completed. These tests comprise of unit tests, system tests and user goal testing. A complete list of these tests can be found in Appendix \ref{sec:UnitTestAppendix}.
+
+\subsection{Unit Testing}
+These tests ensure that the smallest modules of code work as intended. Shown here
+are some of those tests carried out by the team as the system was being developed. Most of these tests are over
+conditional sections of code such as if checks and for loops, which are essential
+to the author's intended functionality of the code. All of these test locations are prefixed by: uk.ecs.gdp.avsummariser. 
+
+Below is a table detailing ten of the most significant unit tests. The rest can be found in Appendix \ref{sec:TestingAppendix} in Section \ref{sec:UnitTestAppendix}.
+
+\begin{center}
+\begin{tabular}{| p{18pt} | p{90pt}| p{78pt}| p{75pt} | p{62pt} | p{35pt} |}
+\hline
+Test & Test location & Test description & Expected result & Actual result & Success\\\hline
+1 & model.audio.\newline FrequencyDetector & For loop, does it exit when it should & Exit after ten iterations & Exits after ten iterations & Y\\\hline
+2 & model.audio.\newline VolumeDetector & In the method
+mergeLoudSectionsInVideo will the if check for the current selection being null
+work as intended & Enter an input of null and the if loop should be entered & If
+loop entered & Y\\\hline
+3 & model.subtitles. \newline PersonNameFinder & In the method
+findPersonNamesInSubtitlesUsingTVDB are all the Strings in the ArrayList looked
+at through the for loop & Should loop through the for loop for each String in
+the ArrayList, so enter ten Strings and the for loop shall loop ten times &
+Enters the for loop ten times & Y\\ \hline
+4 & model.summary. \newline ExportSummary & In the method exportSummary there
+is an if check which checks to ensure that all a file extension is acceptable & All
+permitted file extensions should pass & Only permitted file extensions pass the
+check & Y\\ \hline
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{| p{18pt} | p{90pt}| p{78pt}| p{75pt} | p{62pt} | p{35pt} |}
+\hline
+5 & model.section. \newline comparator. \newline LocationMentioned \newline Comparator & In the method compare the if and else if check area was 
+examined to ensure the correct region was entered for the entered input & First score is bigger than the second, should enter the first region
+ & First region is entered & Y\\ \hline
+6 & model.section. \newline comparator. \newline LocationMentioned \newline Comparator & In the method compare the if and else if check area was 
+examined to ensure the correct region was entered for the entered input & First score is smaller than the second, should enter the first region
+ & First region is entered & Y\\ \hline
+7 & model.tvdb. \newline SeriesSearch & In the method searchSeries enter the if region only when the user has entered a 
+string & Enter nothing & Does not enter the if region, enters the else region instead & Y\\ \hline
+8 & model.subtitles. \newline LocationName \newline Finder & In the
+method getAllLocationNames we test to see if the for loop iterates through all
+of the Strings in the ArrayList & Enter ten Strings and count that the for loop
+iterates ten times & The for loop iterated ten times & Y\\ \hline
+9 & model.subtitles. \newline NameFinder & In the method
+setUpSentenceAndTokenModels we test to see whether the IOException try catch
+section works as intended & When an IOException occurs a stack trace should be
+printed out & A stack trace appears when an IOException occurs & Y\\ \hline
+10 & model.subtitles. \newline NameFinder & In the method
+setUpSentenceAndTokenModels we test to see whether the FileNotFoundException try
+catch section works as intended & When a FileNotFoundException occurs a stack
+trace should be printed out & A stack trace appears when a FileNotFoundException
+occurs & Y\\ \hline
+\end{tabular}
+\end{center}
+
+\subsection{System Testing}
+These tests examine how the system as a whole works. These following tests are a subset of those already
+performed upon the team's project. Others tests may be found in Appendix \ref{sec:TestingAppendix} in Section \ref{sec:SystemTestAppendix}
+
+\begin{center}
+\begin{tabular}{| p{18pt} | p{92pt}| p{68pt}| p{152pt} | p{44pt} |}
+\hline
+Test &Test														&Input				&Expected Outcome					&Actual Outcome
+\\\hline
+1	 &Load Video (Multiple video files)									&MP4 \newline video files			&Loaded Successfully						&Y			
+\\\hline	
+2	&Select video \newline (Non selected \newline previously)								&Video file \newline without subs	&Update display to show video selected and processing for video begins.		&Y
+\\\hline	
+3	&Output tabs \newline update correctly \newline (Whilst not \newline viewing)						&Video file \newline with subs &Output Tabs updated Successfully whilst viewing.	&Y					
+\\\hline						
+4	&Generate summary (Using metrics: \newline genre, trailer type and duration)			&Video file + \newline  Subs. Top \newline Gear series \newline selected.		&Summary generated Successfully using metrics&Y
+\\\hline						
+5	&Generate summary \newline (Multiple videos \newline with mix of Sub\newline  files and none,\newline TVDB info)	&2 Video files. \newline 1 + subs. \newline 1 without \newline TVDB info.	&Summary generated Successfully.	&Y
+\\\hline					
+6	&Play summary \newline (Then play another video/summary)					&1 Video file with subs. \newline TVDB info \newline loaded. 	&Video plays Successfully.		&Y	
+\\\hline								
+7	&Export summary\newline (1 video without\newline Subs, no TVDB \newline info)	&Video file \newline without Subs. No TVDB \newline info loaded.	&Export summary Successfully. However due to development of this feature on Windows, on different operating systems, export directory plus file name to be exported always had Windows ``\textbackslash" file path seperator.			&N
+\\\hline
+8	&RETEST OF 7											&											&Export summary Successfully. Null pointer exception thrown due to Map for people \& location being empty per video.&N
+\\\hline
+9	&RETEST OF 7											&											&Export summary Successfully.	&Y
+\\\hline			
+10	&Export summary again after complete (Checking Summary object in model has updated path)	&Video file \newline without Subs. No TVDB \newline info.	&Export summary Successfully and moved trailer succesfully.	&Y	
+\\\hline	
+\end{tabular}
+\end{center}
+
+\subsection{User's goals}
+
+These tests intend to look at how well the user's goals have been met by the
+team's finished system. Due to time constraints upon the team there was no time to prepare for a suite of user acceptance tests or for the testing to be
+carried out, as the team had initially planned. These tests aim to simulate in some ways
+how the user might interact with the system and to see whether it meets their
+expectations.
+
+\begin{center}
+\begin{longtable}{| p{20pt} | p{105pt}| p{105pt} | p{105pt} | p{35pt} |}
+\hline
+Test & Test description & Expected result & Actual result & Success\\\hline
+1 & The ability to enter a range of different audiovisual formats & A number of
+different formats may be entered such as .ts and .mp4 & Only .mp4 is accepted &
+N\\\hline
+2 & Detection of shots within a video & The same number of shots should be
+detected by the system as a trained editor would find within a video, a team
+member found 347 in a short section of video & The system finds approximately
+the same number of shots as the team members do, the number it found was 361.
+This is mostly like down to the teams inexperience with video editing & Y\\\hline
+3 & Detecting the points at which people appear in a video & Through
+facedetection and recognition the system should be able to find and identify
+faces in a video selection and record the moments these faces appear & Each
+detected character has all the points in which they appeared on screen recorded
+and skippable to & Y\\\hline
+4 & Detecting those points at which characters are mentioned in the subtitles &
+Should record the time stamps of each occasion in which a character is
+mentioned in the subtitles & Each character has a list of those moments in which
+they were mentioned in the subtitles & Y\\\hline
+5 & Detecting the points at which locations are mentioned in the subtitles & A
+list of points when a location is mentioned in the subtitles should be created &
+An accurate list of those moments in which locations are mentioned is created &
+Y\\\hline
+6 & Detecting loud portions of audio & Audio levels should be recorded and loud
+portions can be used & Loud portions can be used as they are recorded down
+using their timestamps & Y\\\hline
+7 & Detecting music in the audio & The system should be able to read in some
+audio and locate those sections which contain music & The system can not
+separate music from other audio & N\\\hline
+8 & Key shot identification & Shots which are key to the video should be
+selected in some manner & Key shots are highlighted to allow the viewer to know
+these shots are deemed important in some manner & Y\\\hline
+9 & Identify the main characters & Those characters which would qualify as main
+should be shown by the system & Those characters which appear frequently enough in a video are shown by the system to be main characters & Y\\\hline
+10 & Identify the main locations & Those locations which are regarded to be main
+should be shown & Those locations which appear frequently enough to be regarded
+as main locations are shown & Y\\\hline
+11 & Identify music & A given piece of audio should be able to be identified as
+a named track by a certain band & Audio samples of original music may be
+identified successfully as to the name of the song and the musicians who played
+it & Y\\\hline
+12 & Summarise the input files based on user selected metrics & A summary or
+``trailer'' should be produced for the entered TV shows, such a trailer should
+be concise, but also entertaining and placing an emphasise on the users chosen
+metric & A summary is created for any input audiovisual data and these summaries
+vary dependent upon the metrics chosen by the user & Y\\\hline
+13 & Exporting a summary & A XML document should be produced to allow the
+summary details to be viewed else where and for the summary to be reproduced &
+A XML file is produced for a summary when desired & Y\\\hline
+14 & Use OpenIMAJ & Using OpenIMAJ instead of recreating functionality & OpenIMAJ is used where possible & N
+\\\hline
+\end{longtable}
+\end{center}

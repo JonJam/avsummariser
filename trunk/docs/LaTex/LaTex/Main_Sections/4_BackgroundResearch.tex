@@ -1,0 +1,132 @@
+% A report on the background research and literature search
+\section{Background Research}
+
+\newcounter{ItemCounter}
+
+\subsection{Introduction}
+The goal of the system is to analyse audiovisual content and to produce a variety of different summaries based upon the user's input. The 
+research focus has been broken down into three main areas. The first area explores the different algorithms used in video summarisation such as general summarisation algorithms, facial recognition and detection and varying audio analysis algorithms. Following that are descriptions of the different techniques used to create audiovisual summaries and then examples of different video summarisation systems. 
+
+\subsection{Algorithms}
+
+There are a variety of different algorithms that have been created for video summarisation, some purely aim to create film summaries out of 
+the given content and others delve further with techniques such as facial recognition and audio analysis to provide more extensive types of summaries. All of 
+these techniques are detailed below. 
+
+\subsubsection{Video Summarisation Algorithms}
+\label{sec:Algorithms}
+The following video summarisation algorithms involve working with rushes video which requires extra processing prior to constructing a summary. This is because rushes video is raw unedited video recorded for television programmes or film which may contain repeated recordings of a single event, clapper boards, colour bars, monochrome frames and other non-important information.
+
+\textbf{Binary Tree Algorithm}
+\newline
+A scalable summarisation algorithm has been created based on the dynamic generation of binary trees. The algorithm firstly 
+considers the incoming video as a block of individual frames which are the basic unit used in this algorithm. These basic units are either classed as ``inclusion" or `discard" which corresponds to whether they are included or excluded in the created summary. The tree is built with an empty root node at the top, and then upon receiving each unit an instance of the two classes is appended to all existing nodes where each branch represents a possible 
+video summary. Through this method all possible summarisations of this video exist within this tree, each leaf node represents a potential 
+video summary from the root node to a specific child node. In order to obtain the optimum summary a score is associated with each leaf node 
+in the tree and the route from root to leaf node with the highest score is the best summarisation possible \cite{ValdesMartinez}. This 
+technique would probably be quite time costly for the team's system if fully implemented although the idea of splitting up the frames into the 
+ones that are used or not could potentially be used. 
+
+\textbf{rushes Summarisation Algorithm}
+\newline
+AT $\&$ T Labs have created an algorithm that aims to create video summaries of rushes video with minimum redundancy and duration up to 2\% 
+of the original video. Prior to summarisation, this approach performs redundancy detection and junk frame removal to remove unimportant 
+information. Following this, sub-shot segmentation is performed to allow easy capture of content changes within a shot. This uses an average 
+salience map (which scores frames according to how interesting they would be to humans) as well as how visually different a frame is compared 
+to a previous frame, and enables the key frames to be chosen from the video. A technique is then applied to the key frames in order to meet 
+the duration requirement stated earlier before finally arranging the frames in a logical order to produce a simple understandable summary 
+video \cite{ATandTLabsRushes}. This algorithm could potentially work to create the trailer part of our system as it produces a summary 
+with minimum redundancy which would be a vital consideration. 
+
+\textbf{Similarity Algorithm}
+\newline
+At Brno University of Technology a system for producing video summaries has been created by identifying similar clips and covering all different flavours of shots. This system performs junk frame removal before clustering similar shots in the video so that shots can be selected using the following criteria: variability inside the shots, length of the shots, and ensuring that at least one representative from each cluster is chosen. By doing this iteratively a sequence of shots for the summary is gathered and then adjusted accordingly (for speed etc) to produce the final summary \cite{BrnoSummarisation}. This algorithm could potentially work for some genres of video content, however in our system we are aiming to produce general code that could summarise any type of video and in areas such as action or sport there may be too many similar shots to produce an effective summary. 
+
+\textbf{Auto Action Movie Trailer Algorithm}
+\newline
+This algorithm uses an approach for automatically selecting shots from action movies to assist in the creation of trailers. Significant 
+shots are identified using colour histograms to catch shot boundaries, and an analysis of the movie audiotrack is performed to detect different aspects 
+such as speech, music and silence, in order to give a percentage of each of these different types of sound to a frame which can indicate important 
+shots in a film. Finally the amount of motion and the percentage of camera movement is also detected for each shot. Utilising these features 
+the shots for the trailer are selected \cite{AutoActionTrailers}. This algorithm is quite specific to action movies and our system will be 
+looking at all different types of genres although its techniques could potentially be adapted for additional types of video content or it 
+could be an algorithm that is specifically applied when the genre action is selected. 
+
+\subsubsection{Facial Recognition Algorithms}
+\label{sec:FacialRecognition}
+Facial recognition is a complex goal to achieve and there are a number of factors that make it so. Characters are constantly moving, speaking and performing a range of actions and with the addition of changing camera angles and background scenery it becomes very difficult to keep track of the same face. To combat this face detection algorithms tend to analyse additional information as well as the pure video content in order to maintain recognition of the different characters. 
+
+An example of this is a system that analyses extra data associated with the video in order to label each character in each frame of the popular television series ``Buffy the Vampire Slayer". This algorithm works by first analysing and aligning both the scripts and subtitles in order to make predictions about which characters are speaking and when. Once this has been done a face detection algorithm is performed on the video to record the characters clothes and mouth regions. This is followed by a lip motion detection algorithm, which combined with the initial textual analysis enables the system to identify and label the characters within the video \cite{buffy}. Whilst our system does not have access to the scripts of the video content that will be used, a majority of that will come with subtitle data, which can be analysed to enhance our character detection. 
+
+In addition to the constant movement of characters an additional problem in facial detection and recognition is the high level of variation 
+in illumination within a sequence of frames. In video content such as action films or sports matches there will be an even higher level of 
+movement than most genres and particularly in outside sports such as football matches, there will be the problem of constant changes in the 
+lighting. 
+
+One solution to combat these problems is a system which is designed specifically for sporting video content, with a special focus on soccer matches. 
+The system works by detecting faces using a modified adaboost face detector and then keeping track of key facial patches such as the eyes and 
+mouth, in order to more accurately identify the players using a SIFT algorithm by L.Ballan et al. \cite{football}. By focusing on smaller points of the face 
+it increases the likelihood that these points would still be able to be identified in different lighting and in different positions. This is 
+a technique that should be both useful and possible in the team's system as the OpenIMAJ library provides the ability to detect smaller 
+portions of the face, which will enable the system to keep better track of the different characters throughout the scene changes. 
+
+\subsubsection{Audio Analysis Algorithms}
+\label{sec:AudioAnalysis}
+It is important to remember that sequences of frames that make up video content are only half the information. There is also the whole world 
+of audio data that comes with it such as speech, music and additional genre based sounds such as laughter for comedy and crowd response for 
+sporting matches. 
+
+Often in action based video content such as action films or sporting matches there is a great deal of background noise and this can be used to aid analysis of the video. An example of this is a system that was designed to generate metadata for TV programs (in particular football games) by analysing the crowd noise to work out the most significant moments. These scenes then had the commentator’s speech analysed to identify additional information such as which players were involved. This was done using morphological and syntactic analysis with two dictionaries \cite{AcousticMetadata}. This technique would enable our system to identify the main scenes in the submitted video content so that they could be analysed to check that they weren’t giving away the end of the film’/episode by identifying their placement within the video and then combined to make a summary trailer. 
+
+The other element of audio data that is often useful to analyse is music within a video. This is difficult to achieve because musical pieces are often used as background music behind speech and additional noise within a scene. However, despite these difficulties systems have been written to identify the different musical pieces used in a video.  An example of such a system works by continually extracting audio signals from broadcasts and using these signals to construct retrieval keys, which are a series of feature vectors. Once constructed, the keys index into a large music database to identify the different musical pieces \cite{BackgroundMusic}. This technique enables the system to be robust against non-stationary noise and would be a useful technique in detecting and identifying music within a video.
+
+\subsection{Techniques for producing Audiovisual Summaries}
+\label{sec:techniques}
+There are three different techniques that are commonly used to produce audiovisual summaries: Internal, External and Hybrid \cite{elvis}. Each of which are explained in more details in the following points:
+
+\begin{itemize}
+	\item{Internal video summarisation techniques produce video summaries by analysing low level features that are only present within the video stream such as colour, shape, object motion, speech or on-screen text.}
+	\item{External video summarisation techniques produce video summaries by analysing information external to the video stream such as time and location of the video and user based information such as their description of the content.} 
+	\item{Hybrid video summarisation techniques use a combination of the above to provide additional levels of detail to reduce ambiguity.}
+\end{itemize}
+
+\subsection{Existing Video Summarisation Solutions}
+
+This paper by P. Over et al. \cite{BBCRushes} describes a comparison and evaluation of thirty-one
+different research groups approaches to summarising video who had to summarise rush video with the aim to remove redundant and insignificant 
+information and to have a duration of at most 2\% of the original. These processes were judged according to measures such as how long it took 
+the system to produce the summary, how long the summary produced was and the quality of the summary. Some of the systems in this paper have 
+been looked at in the section below:
+
+\textbf{ELVIS - Entertainment-Led Video Summaries}
+\newline
+The ELVIS system is an external video summarisation system that produces personalised video summaries based on segments which are chosen according to real time user physiological responses. ELVIS uses five physiological response measures which are electro-dermal response (EDR), heart rate (HR), blood volume pulse (BVP), respiration rate (RR), and respiration amplitude (RA) which are monitored as a user watches the video content. These responses are mapped to scenes within the video then those scenes with the most physiological responses are then chosen to be part of the summary \cite{elvis}.
+
+\textbf{RISPlayer}
+\newline
+The RISPlayer systems is an internal video summarisation system
+in which summaries are generated and visualised simultaneously where the generation parameters can be modified at the same time. The system uses the binary tree based algorithm detailed in Section \ref{sec:Algorithms} \cite{risplayer}.
+
+\textbf{Home Movie Summarisation System}
+\newline
+This system is a home video summarisation system that performs automatic video summarisation before allowing a user to manually edit the 
+summary through a video editing software type interface. The system uses the principle of sub-shot footprints to provide three different 
+summary types, Prominent, Coverage and All. Additional user inputs such as target length and coverage can further refine the 
+summaries produced \cite{censor}.
+
+\textbf{Web-based Real Time Content Processing and Monitoring Service for
+Digital TV Broadcast}
+\newline
+The system in question here is a real time content processing and monitoring service for Digital TV Broadcast which provides users with 
+a web interface where they can tune to different TV channels or pre recorded content and view the video/metadata produced by the system. The system works as follows: it receives Digital TV broadcasts and processes this input
+to collect metadata. Firstly they gather programme information using the PSIP protocol which is part of the TV broadcast and additional 
+information from web sites such as IMDB to obtain more information. Then automatic speech recognition (ASR) is performed using the AT \& T Watson speech recogniser to collect ASR transcripts as well as extraction of the subtitles from a programme. The subtitles and ASR transcripts are then normalised in order to extract a list of keywords. Finally using a combination of shot boundary detection, face detection and redundancy removal  is performed to select a sample of key shots. The key shots, key words, programme information and the original content are all presented in the web interface \cite{ProcessingDigitalTV} .
+
+\subsection{Conclusion}
+After researching the wide selection of techniques the team came to the conclusion about which aspects to include in the system. 
+
+The algorithms these solutions use have been compared to those that are available in OpenIMAJ to see which would fit into our system. In regards to the overall video summarisation algorithm,
+our system will implement an algorithm similar to the Auto Action Movie Trailer Algorithm
+explained in Section \ref{sec:Algorithms}.
+
+The OpenIMAJ library \cite{citeOpenImaj} that is used within the system also uses colour histograms to detect shot boundaries so the system will use these methods and build upon them. The aforementioned algorithm also uses sound analysis to indicate important shots within a film, a technique that is also demonstrated in Section \ref{sec:AudioAnalysis}. The system will be utilising this technique to pick out the main shots that should be included in the trailer. 

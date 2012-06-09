@@ -1,0 +1,176 @@
+\begin{thebibliography}{10}
+
+\bibitem{citeEcho}
+Echonest - http://the.echonest.com/.
+
+\bibitem{jdom}
+Jdom library - http://www.jdom.org.
+
+\bibitem{jenAPI}
+Jen api - http://code.google.com/p/jen-api/.
+
+\bibitem{JFreeChart}
+Jfreechart - http://www.jfree.org/jfreechart/.
+
+\bibitem{jsonAPI}
+Json simple - http://code.google.com/p/json-simple/.
+
+\bibitem{citeMaven}
+Maven - http://maven.apache.org/.
+
+\bibitem{nlp}
+Open nlp library - http://incubator.apache.org/opennlp/.
+
+\bibitem{citeOpenImaj}
+Openimaj - http://sourceforge.net/p/openimaj/home/openimaj/.
+
+\bibitem{tvdb}
+The television database - http://thetvdb.com/.
+
+\bibitem{tvdbLibrary}
+The television database library - http://code.google.com/p/javatvdbapi/.
+
+\bibitem{football}
+L.~Ballan, M.~Bertini, A.~Del Bimbo, and W.~Nunziati.
+\newblock Soccer players identification based on visual local features.
+\newblock In {\em Proceedings of the 6th ACM international conference on Image
+  and video retrieval}, CIVR '07, pages 258--265, New York, NY, USA, 2007. ACM.
+
+\bibitem{BrnoSummarisation}
+V\'{\i}t\v{e}zslav Beran, Michal Hradis, Pavel Zemcik, Adam Herout, and Ivo
+  \v{R}ezn\'{\i}\v{c}ek.
+\newblock Video summarization at brno university of technology.
+\newblock In {\em Proceedings of the 2nd ACM TRECVid Video Summarization
+  Workshop}, TVS '08, pages 31--34, New York, NY, USA, 2008. ACM.
+
+\bibitem{citeScalability}
+A.B Bondi.
+\newblock {Characteristics of Scalability and their Impact on Performance}.
+\newblock In {\em {Proceedings of the 2nd International Workshop on Software
+  and Performance}}, pages 195 -- 203, 2000.
+
+\bibitem{citePairProgramming}
+A~Cockburn and L~Williams.
+\newblock The costs and benefits of pair programming.
+\newblock In {\em Proceedings of the First International Conference on Extreme
+  Programming and Flexible Processes in Software Engineering (XP2000)}, 2000.
+
+\bibitem{censor}
+Saman Cooray, Hyowon Lee, and Noel O'Connor.
+\newblock A user-centric system for home movie summarisation.
+\newblock In Kuo-Tien Lee, Wen-Hsiang Tsai, Hong-Yuan Liao, Tsuhan Chen,
+  Jun-Wei Hsieh, and Chien-Cheng Tseng, editors, {\em Advances in Multimedia
+  Modeling}, volume 6523 of {\em Lecture Notes in Computer Science}, pages
+  424--434. Springer Berlin / Heidelberg, 2011.
+\newblock 10.1007/978-3-642-17832-0\_40.
+
+\bibitem{buffy}
+M.~Everingham, J~Sivic, and A.~Zisserman.
+\newblock {``Hello! My name is... Buffy" - Automatic Naming of Characters in TV
+  video}.
+
+\bibitem{designRef}
+E.~Gamma, R.~Helm, R.~Johnson, and J.~Vlissides.
+\newblock {\em Design Patterns}.
+\newblock Addison Wesley, 1st edition, January 1995.
+
+\bibitem{ProcessingDigitalTV}
+Zhu Liu, D.~Gibbon, and B.~Shahraray.
+\newblock Web-based real time content processing and monitoring service for
+  digital tv broadcast.
+\newblock In {\em Broadband Multimedia Systems and Broadcasting (BMSB), 2010
+  IEEE International Symposium on}, pages 1 --6, march 2010.
+
+\bibitem{ATandTLabsRushes}
+Zhu Liu, Eric Zavesky, Behzad Shahraray, David Gibbon, and Andrea Basso.
+\newblock Brief and high-interest video summary generation: evaluating the
+  at\&\#38;t labs rushes summarizations.
+\newblock In {\em Proceedings of the 2nd ACM TRECVid Video Summarization
+  Workshop}, TVS '08, pages 21--25, New York, NY, USA, 2008. ACM.
+
+\bibitem{JAudio}
+Daniel Mcennis, Cory Mckay, and Ichiro Fujinaga.
+\newblock Jaudio: A feature extraction library.
+\newblock In {\em International Conference on Music Information Retrieval},
+  2005.
+
+\bibitem{JMIR}
+Cory Mckay and Ichiro Fujinaga.
+\newblock jmir: Tools for automatic music classification.
+\newblock In {\em Proceedings of the International Computer Music Conference},
+  2009.
+
+\bibitem{citeCleanroom}
+H~Mills, M~Dyer, and R~Linger.
+\newblock Cleanroom software engineering.
+\newblock {\em IEEE Software}, 4(5):19--25, September 1987.
+
+\bibitem{elvis}
+Arthur~G. Money and Harry Agius.
+\newblock Elvis: Entertainment-led video summaries.
+\newblock {\em ACM Trans. Multimedia Comput. Commun. Appl.}, 6:17:1--17:30,
+  August 2010.
+
+\bibitem{BBCRushes}
+Paul Over, Alan~F. Smeaton, and George Awad.
+\newblock The trecvid 2008 bbc rushes summarization evaluation.
+\newblock In {\em Proceedings of the 2nd ACM TRECVid Video Summarization
+  Workshop}, TVS '08, pages 1--20, New York, NY, USA, 2008. ACM.
+
+\bibitem{BeatDetection}
+F.~Patin.
+\newblock {Beat Detection Algorithms}.
+\newblock Gamedev.net, 2003.
+
+\bibitem{Royce}
+W.~Royce.
+\newblock Managing the development of large software systems.
+\newblock In {\em Proceedings of IEEE WESCON}, volume~26, pages 1--9, August
+  1970.
+
+\bibitem{AcousticMetadata}
+M.~Sano, H.~Sumiyoshi, M.~Shibata, and N.~Yagi.
+\newblock Generating metadata from acoustic and speech data in live
+  broadcasting.
+\newblock In {\em Acoustics, Speech, and Signal Processing, 2005. Proceedings.
+  (ICASSP '05). IEEE International Conference on}, volume~2, pages ii/1145 --
+  ii/1148 Vol. 2, march 2005.
+
+\bibitem{AutoActionTrailers}
+Alan~F. Smeaton, Bart Lehane, Noel~E. O'Connor, Conor Brady, and Gary Craig.
+\newblock Automatically selecting shots for action movie trailers.
+\newblock In {\em Proceedings of the 8th ACM international workshop on
+  Multimedia information retrieval}, MIR '06, pages 231--238, New York, NY,
+  USA, 2006. ACM.
+
+\bibitem{riskRef}
+I~Sommerville.
+\newblock {\em Software Engineering}.
+\newblock Addison Wesley, Pearson Education, 8th edition, June 2007.
+
+\bibitem{BackgroundMusic}
+Yoshiharu Suga, Naoko Kosugi, and Masashi Morimoto.
+\newblock Real-time background music monitoring based on content-based
+  retrieval.
+\newblock In {\em Proceedings of the 12th annual ACM international conference
+  on Multimedia}, MULTIMEDIA '04, pages 120--127, New York, NY, USA, 2004. ACM.
+
+\bibitem{risplayer}
+Victor Vald\&\#38;3233;s and Jos\'{e}~M. Mart\'{\i}nez.
+\newblock Introducing risplayer: real-time interactive generation of
+  personalized video summaries.
+\newblock In {\em Proceedings of the 2010 ACM workshop on Social, adaptive and
+  personalized multimedia interaction and access}, SAPMIA '10, pages 9--14, New
+  York, NY, USA, 2010. ACM.
+
+\bibitem{ValdesMartinez}
+V\'{\i}ctor Vald\'{e}s and Jos\'{e}~M. Mart\'{\i}nez.
+\newblock Binary tree based on-line video summarization.
+\newblock In {\em Proceedings of the 2nd ACM TRECVid Video Summarization
+  Workshop}, TVS '08, pages 134--138, New York, NY, USA, 2008. ACM.
+
+\bibitem{citeIlluminatedPair}
+L~Williams and Kessler R.
+\newblock {Pair Programming Illuminated}, 2003.
+
+\end{thebibliography}

@@ -1,0 +1,47 @@
+\section{Future Work}
+\label{sec:FutureWork}
+The scope of the project was very large since the team was given many potential features from their client in the early stages. As touched on in some previous 
+sections of this report there were some requirements which the team would have worked on if there was more time available, as well as some new ideas which 
+surfaced whilst the project has been developed.
+
+The first stage of future work would be to perfect the existing parts of the project which due to time constraints were not fully implemented or may not 
+be performing optimally. Additionally further testing may have helped to tweak the summary type settings to produce better video summaries. The following 
+paragraphs discuss extensions for the system.
+
+The team would like to expand the system to accept a greater number of video types. The system currently works with MP4 files, whilst it is easy to 
+convert to this format externally, it would be more user friendly for the application to handle this.
+
+The name detection process which is currently used within the system could be improved to increase the accuracy of detecting names and their occurrences 
+within Subtitles. Improvement to this module could be to extend the occurrence name search process to look for repeats of the same name with a Subtitle 
+speech line, which the system currently doesn’t do because the team are only interested in when different names occur. Furthermore this module could
+ perform context analysis of a sentence to find out which person is referred to with more accuracy i.e. Tyler could be for Rose Tyler or Jackie Tyler. 
+Improvements could also help with removing false positives in analysis in particular where person names are detected as the main locations.
+
+Another future area to investigate would be music detection since due to the limited time available and the lack of suitable libraries meant that this feature 
+wasn’t completed. This is something that the team would like to have worked on, but it is believed the module could represent a new project in itself. This would 
+then be integrated with the existing Frequency Detector and Music Identification modules in the system.
+
+Facial detection and recognition was not quite complete in the final system. One of the first issues to tackle would be memory issues, particularly 
+perfecting the balance between the application storing too much data, but also having enough information available to make predictions. Also 
+expanding SIFT comparison to work in the same way as it does for facial key points. Additional extensions that could also enhance the system would be to 
+able to match every character to their corresponding actors, as opposed to just the main ones.
+
+Currently the output video is very obviously computer generated. The developers have not yet invested time into shot transition and would like to 
+look into this in order to improve the viewing experience. When processing particular videos there is some unexpected audio noise, which could not be 
+investigated in the time available for the project, but is an important issue to address. A further addition to the module which has been identified 
+during development is ensuring a good range of shot length in the final output. This would mean analysing the shot and video segment density and making 
+adjustments before the final video summary is built. Additionally the developers would like to investigate alternative techniques to rank the shots 
+for the video summary.
+
+An area mentioned by our client was to investigate how video which had not been broadcast could be analysed to see whether additional programmes 
+can be made with the excess footage. This was not something that was in the team's final list of requirements for a number of reasons. In order to do this 
+the system would need some sample footage of a program where this use case applies. It would also involve processing a lot more data, and therefore increase 
+the time needed to develop and test this type of functionality. The team would also need to learn more about the type of content and editorial decisions in 
+order to make better judgements. Overall this would mean more interaction with the BBC, which is difficult to organise and execute in such a short 
+project.
+
+A final addition to the product would be to extend the natural language processing used to identify the main “topics”. That would likely make the 
+textual summary more informative. In order to do this well there would need to be some comparison within an episode and also across a series. Potentially 
+the system could use the TVDB to assist with this, possibly looking at titles of episodes also. The way a topic would be discovered and considered 
+accurate is less well defined than names and locations for example. Therefore it would take some time to implement and test, particularly assessing 
+its accuracy is difficult as even a group of video viewers can struggle to agree on key themes.

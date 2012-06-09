@@ -1,0 +1,82 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Report.aux
+The style file: plain.bst
+A level-1 auxiliary file: TitlePage.aux
+A level-1 auxiliary file: Abstract.aux
+A level-1 auxiliary file: Acknowledgements.aux
+A level-1 auxiliary file: Main_Sections/1_ProjectDescription.aux
+A level-1 auxiliary file: Main_Sections/2_ProjectDynamics.aux
+A level-1 auxiliary file: Main_Sections/3_ProjectAnalysis.aux
+A level-1 auxiliary file: Main_Sections/4_BackgroundResearch.aux
+A level-1 auxiliary file: Main_Sections/5_Design.aux
+A level-1 auxiliary file: Main_Sections/6_Implementation.aux
+Case mismatch error between cite keys tvdblibrary and tvdbLibrary
+---line 15 of file Main_Sections/6_Implementation.aux
+ : \citation{tvdblibrary
+ :                      }
+I'm skipping whatever remains of this command
+A level-1 auxiliary file: Main_Sections/7_Testing.aux
+A level-1 auxiliary file: Main_Sections/8_Evaluation.aux
+A level-1 auxiliary file: Main_Sections/9_Conclusions.aux
+A level-1 auxiliary file: Main_Sections/10_FutureWork.aux
+A level-1 auxiliary file: References.aux
+A level-1 auxiliary file: bu.aux
+A level-1 auxiliary file: Appendices.aux
+Database file #1: References.bib
+Warning--I didn't find a database entry for "OpenImaj"
+Warning--I didn't find a database entry for "nlpDoc"
+Warning--I didn't find a database entry for "citeObserver"
+Warning--to sort, need author or key in citeMaven
+Warning--to sort, need author or key in jdom
+Warning--to sort, need author or key in nlp
+Warning--to sort, need author or key in tvdb
+Warning--to sort, need author or key in tvdbLibrary
+Warning--to sort, need author or key in citeEcho
+Warning--to sort, need author or key in jenAPI
+Warning--to sort, need author or key in jsonAPI
+Warning--to sort, need author or key in JFreeChart
+Warning--to sort, need author or key in citeOpenImaj
+Warning--there's a month but no year in citeIlluminatedPair
+You've used 33 entries,
+            2118 wiz_defined-function locations,
+            697 strings with 9345 characters,
+and the built_in function-call counts, 10852 in all, are:
+= -- 1061
+> -- 415
+< -- 16
++ -- 172
+- -- 134
+* -- 660
+:= -- 1570
+add.period$ -- 87
+call.type$ -- 33
+change.case$ -- 163
+chr.to.int$ -- 0
+cite$ -- 44
+duplicate$ -- 474
+empty$ -- 997
+format.name$ -- 134
+if$ -- 2462
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 22
+newline$ -- 147
+num.names$ -- 48
+pop$ -- 251
+preamble$ -- 1
+purify$ -- 130
+quote$ -- 0
+skip$ -- 420
+stack$ -- 0
+substring$ -- 623
+swap$ -- 155
+text.length$ -- 16
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 128
+warning$ -- 11
+while$ -- 86
+width$ -- 35
+write$ -- 324
+(There was 1 error message)
